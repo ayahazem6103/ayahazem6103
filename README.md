@@ -1,13 +1,13 @@
 <h1 align="center">Hello 👋, I'm Aya Hazem</h1>
-<h3 align="center">Aspiring Data Scientist</h3>
+<h3 align="center">Junior AI Engineer</h3>
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=ayahazem6103&label=Profile%20views&color=0e75b6&style=flat" alt="ayahazem6103" />
                    <img src="https://img.shields.io/github/followers/ayahazem6103?label=Followers" alt="ayahazem6103" />
 </p>
 
 <br>
 
-- 👋 Hi, I’m a CCSE "Computers and Controls Systems Engineering" student at Mansoura University
-- 🌱 I’m currently learning data science and especially interseted in Machine Learning and Deep Learning
+- 👋 Hi, I’m a CCSE "Computers and Controls Systems Engineering" graduate from Mansoura University 'class 2025'.
+- 🌱 I’m a Junior AI Engineer with six months of experience working with large-language models (LLMs) and building machine learning and deep learning systems.
 - 💞️ I’m looking for ML project ideas and to collaborate on ML projects
 - 📩 Connect with me
 
