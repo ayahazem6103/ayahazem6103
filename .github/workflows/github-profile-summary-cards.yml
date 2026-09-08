@@ -15,19 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate github (light) theme
-        uses: vn7n24fzkq/github-profile-summary-cards@release
-        env:
-          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
-        with:
-          USERNAME: ${{ github.repository_owner }}
-          BRANCH_NAME: "main"
-          UTC_OFFSET: 3
-          EXCLUDE: ""
-          AUTO_PUSH: true
-          THEME: "github"
-
-      - name: Generate tokyonight (dark) theme
+      - name: Generate tokyonight theme
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}

@@ -31,14 +31,8 @@
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/tokyonight/3-stats.svg" />
-  <img src="./profile-summary-card-output/github/3-stats.svg" alt="GitHub stats" />
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" />
-  <img src="./profile-summary-card-output/github/1-repos-per-language.svg" alt="Top languages by repo" />
-</picture>
+<img src="./profile-summary-card-output/tokyonight/3-stats.svg" alt="GitHub stats" />
+<img src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" alt="Top languages by repo" />
 
 </div>
 
