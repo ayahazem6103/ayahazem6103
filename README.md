@@ -36,6 +36,8 @@
 
 </div>
 
+---
+
 <p align="center">
   <img
     src="https://github-readme-streak-stats.herokuapp.com/?user=AyaHazem6103&theme=tokyonight_duo"

@@ -13,7 +13,12 @@ jobs:
       contents: write
 
     steps:
+      # Use the PAT for checkout so later git push can write to main
+      # (repo/org "read-only" default GITHUB_TOKEN often causes Invalid status code: 1).
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - name: Generate tokyonight theme
         uses: vn7n24fzkq/github-profile-summary-cards@release
@@ -24,5 +29,19 @@ jobs:
           BRANCH_NAME: "main"
           UTC_OFFSET: 3
           EXCLUDE: ""
-          AUTO_PUSH: true
+          # Avoid the action's internal git push (flaky with two themes / stale tip).
+          AUTO_PUSH: false
           THEME: "tokyonight"
+
+      - name: Commit and push cards
+        run: |
+          git config user.email "profile-summary-cards-bot@example.com"
+          git config user.name "profile-summary-cards[bot]"
+          git add profile-summary-card-output
+          if git diff --staged --quiet; then
+            echo "No card changes to commit."
+            exit 0
+          fi
+          git commit -m "Generate profile summary cards"
+          git pull --rebase origin main
+          git push origin HEAD:main
