@@ -29,10 +29,18 @@
 
 ## 📊 GitHub Stats
 
-<p align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-  </a>
-</p>
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/tokyonight/3-stats.svg" />
+  <img src="./profile-summary-card-output/github/3-stats.svg" alt="GitHub stats" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" />
+  <img src="./profile-summary-card-output/github/1-repos-per-language.svg" alt="Top languages by repo" />
+</picture>
+
+</div>
 
 <p align="center">
   <img
